@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'dommageregular';
+    src: url('./fonts/dommage-webfont.woff2') format('woff2'),
+        url('./fonts/dommage-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'dommageregular';
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header,
+nav,
+section,
+footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1,
+h2 {
+    color: crimson;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    color: crimson;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+input[type="submit"] {
+    text-align: center;
+    background-color: crimson;
+    color: #000;
+    cursor: pointer;
+}
