@@ -1,84 +1,125 @@
-@font-face {
-    font-family: 'dommageregular';
-    src: url('./fonts/dommage-webfont.woff2') format('woff2'),
-        url('./fonts/dommage-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
-    font-family: 'dommageregular';
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background: #111;
     color: #fff;
+    padding: 1em 0;
+    text-align: center;
 }
 
-header,
-nav,
-section,
-footer {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff6600; /* Neon Orange */
 }
 
-h1,
-h2 {
-    color: crimson;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav li {
+nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: crimson;
-}
-
-a:hover {
-    color: #ffcc00;
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-label {
-    color: crimson;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
 }
 
-input[type="submit"] {
+nav a:hover {
+    color: #ff6600; /* Neon Orange */
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('hero-background.jpg') center/cover no-repeat;
+    color: #fff;
     text-align: center;
-    background-color: crimson;
-    color: #000;
-    cursor: pointer;
+    padding: 4em 0;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff6600; /* Neon Orange */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600; /* Neon Orange */
+    color: #111; /* Dark Background */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #111; /* Dark Background */
+    color: #ff6600; /* Neon Orange */
+}
+
+/* Section Styles (Adjust as needed) */
+section {
+    padding: 4em 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff6600; /* Neon Orange */
+}
+
+/* Footer Styles */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #ff6600; /* Neon Orange */
+}
+
+/* Responsive Styles (Adjust as needed) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
 }
