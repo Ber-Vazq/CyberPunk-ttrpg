@@ -1,125 +1,92 @@
 body {
-    font-family: 'Orbitron', sans-serif;
+    font-family: Consolas, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    color: #fff;
 }
 
-/* Header Styles */
 header {
-    background: #111;
-    color: #fff;
-    padding: 1em 0;
     text-align: center;
+    padding: 20px;
 }
 
-.logo {
-    font-size: 2em;
-    font-weight: bold;
-    color: #ff6600; /* Neon Orange */
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #ff6600; /* Neon Orange */
-}
-
-/* Hero Section Styles */
-.hero {
-    background: url('hero-background.jpg') center/cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 4em 0;
-}
-
-.hero-content h1 {
+h1 {
     font-size: 3em;
-    margin-bottom: 20px;
-    color: #ff6600; /* Neon Orange */
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ff6600; /* Neon Orange */
-    color: #111; /* Dark Background */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    background: #111; /* Dark Background */
-    color: #ff6600; /* Neon Orange */
-}
-
-/* Section Styles (Adjust as needed) */
-section {
-    padding: 4em 0;
+    letter-spacing: 4px;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
     margin-bottom: 20px;
-    color: #ff6600; /* Neon Orange */
 }
 
-/* Footer Styles */
-footer {
-    background: #111;
+#intro img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#campaign-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#campaign-info li {
+    margin-bottom: 5px;
+}
+
+#join a {
+    background-color: #f01212;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
-
-footer p {
-    font-size: 0.8em;
-}
-
-footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-footer a {
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#join a:hover {
+    background-color: #8300af;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #202020;
+}
+
+.countdown {
+    text-align: center;
+    color: #f01212;
+    font-size: 1.5em;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.character-card {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #f01212;
+    border-radius: 5px;
+    background-color: #202020;
     color: #fff;
-    transition: color 0.3s ease-in-out;
 }
 
-footer a:hover {
-    color: #ff6600; /* Neon Orange */
+.character-card h3 {
+    font-size: 1.2em;
 }
 
-/* Responsive Styles (Adjust as needed) */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 1em;
-    }
-
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5em;
-    }
-
-    .cta-button {
-        padding: 8px 16px;
-        font-size: 0.9em;
-    }
+.character-card p {
+    margin-bottom: 5px;
 }
