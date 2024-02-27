@@ -9,6 +9,8 @@ body {
 header {
     text-align: center;
     padding: 20px;
+    background-image: url('/assets/2077_cityscape.jpeg');
+    background-position: center;
 }
 
 h1 {
