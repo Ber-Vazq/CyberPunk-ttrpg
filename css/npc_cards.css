@@ -1,0 +1,63 @@
+/* Character Card Styles */
+.character-card {
+    display: flex; /* Arrange picture and info side-by-side */
+    gap: 20px; /* Add spacing between picture and info */
+    background-color: #202020;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the card */
+    color: #fff; /* White text color */
+    font-family: sans-serif; /* Use a sans-serif font */
+  }
+  
+  .character-picture {
+    flex: 0 0 150px; /* Set picture width to 150px */
+    height: 150px;
+    border-radius: 50%; /* Circular picture */
+    overflow: hidden; /* Avoid image overflow */
+  }
+  
+  .character-picture img {
+    width: 100%; /* Scale image to fit picture element */
+    height: 100%; /* Scale image to fit picture element */
+    object-fit: cover; /* Crop image to fit while maintaining aspect ratio */
+  }
+  
+  .character-info {
+    flex: 1; /* Allow info section to grow */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    gap: 10px; /* Add spacing between elements within the info section */
+  }
+  
+  .character-info h1,
+  .character-info p,
+  .character-info h2 {
+    margin: 0; /* Remove default margins */
+  }
+  
+  .character-info h1 {
+    font-size: 20px; /* Adjust heading size */
+    text-transform: uppercase; /* Convert to uppercase */
+  }
+  
+  .character-info p {
+    font-size: 14px; /* Adjust paragraph size */
+    line-height: 1.5; /* Adjust line spacing for readability */
+  }
+  
+  .character-info h2 {
+    font-size: 16px; /* Adjust subheading size */
+    margin-bottom: 5px; /* Add some space after subheading */
+  }
+  
+  .character-info ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+  }
+  
+  .character-info li {
+    font-size: 14px; /* Adjust list item size */
+    margin-bottom: 5px; /* Add spacing between list items */
+  }
+  

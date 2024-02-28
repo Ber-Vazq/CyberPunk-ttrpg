@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <h1>Pyramid Schemes</h1>
+    <h2>The Events</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/punk.css">
+    <link rel="stylesheet" href="/css/npc_cards.css">
+</header>
+</head>
+<br>
+<nav>
+    <ul>
+        <li><a href="/pages/campaigns.html">Campaign</a></li>
+        <li><a href="#character-list">Character Sheets</a></li>
+        <li><a href="/pages/resources.html">Resources</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/npc.html">NPCs</a></li>
+    </ul>
+</nav>
+<br>
+
+<body>
+    <h1>Add Character Cards</h1>
+    <form id="character-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="picture">Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+
+        <label for="birth-date">Birth/Death Date (e.g., Jan 1, 2000 - Dec 31, 2077):</label>
+        <input type="text" id="birth-date" name="birth-date" required><br><br>
+
+        <label for="death-date">Death Date (optional):</label>
+        <input type="text" id="death-date" name="death-date"><br><br>
+
+        <label for="biography">Biography:</label>
+        <textarea id="biography" name="biography" required></textarea><br><br>
+
+        <label for="relationships">Relationships (separated by commas):</label>
+        <textarea id="relationships" name="relationships" required></textarea><br><br>
+
+        <button type="submit">Add Character Card</button>
+    </form>
+    <div id="character-cards">
+    </div>
+
+    <script src="/scripts/npcCards.js"></script>
+</body>
+
+</html>
