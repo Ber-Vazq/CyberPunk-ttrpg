@@ -118,7 +118,29 @@ class CharacterCard {
     };
     reader.readAsArrayBuffer(character.picture); // Read the image file as an ArrayBuffer
   }
+  function displayCharacterCards() {
+    const characterCards = document.getElementById("character-cards");
+    characterCards.innerHTML = ""; // Clear existing cards
+  
+    // Retrieve character data from local storage
+    const characterData = JSON.parse(localStorage.getItem("characters")) || [];
+  
+    // Create character cards for each entry
+    characterData.forEach(data => {
+      const character = createCharacter(
+        data.name,
+        data.picture,
+        data.birthDate,
+        data.deathDate,
+        data.biography,
+        data.relationships
+      );
+      const cardHTML = character.generateCardHTML();
+      characterCards.insertAdjacentHTML("beforeend", cardHTML);
+    });
+  }
   
   // Load existing character cards from local storage on page load
-  window.addEventListener
+  window.addEventListener("load", displayCharacterCards);
+
   
