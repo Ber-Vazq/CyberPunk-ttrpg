@@ -1,3 +1,7 @@
-{
-  "extends": "next/core-web-vitals"
-}
+// .eslintrc.js
+module.exports = {
+  extends: ['next/core-web-vitals'],
+  rules: {
+    // Custom rules or overrides here
+  },
+};
