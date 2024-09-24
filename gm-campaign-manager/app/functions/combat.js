@@ -24,11 +24,12 @@ const CombatInterface = () => {
     return (
         <div>
             <h1>Combat Interface</h1>
+            <h2>Combat Log</h2>
             <button onClick={handleCombat}>Start Combat</button>
-            <textarea 
-                value={combatLog} 
-                readOnly 
-                rows="10" 
+            <textarea
+                value={combatLog}
+                readOnly
+                rows="10"
                 cols="50"
                 placeholder="Combat results will be displayed here..."
             />
