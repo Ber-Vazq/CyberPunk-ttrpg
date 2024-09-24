@@ -8,7 +8,7 @@ import React, { useState } from 'react';
  * This interface will handle combat mechanics in the future.
  * For now, it includes a simple textbox to display combat results.
  */
-const CombatInterface = () => {
+const combatLog = () => {
     const [combatLog, setCombatLog] = useState('');
 
     /**
@@ -37,4 +37,4 @@ const CombatInterface = () => {
     );
 };
 
-export default CombatInterface;
+export default combatLog;
