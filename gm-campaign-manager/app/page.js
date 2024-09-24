@@ -23,6 +23,7 @@ const HomePage = () => {
             <li><a href="#" className="text-cyberpunk-pink hover:text-cyberpunk-orange">NPC Generator</a></li>
             <li><a href="#" className="text-cyberpunk-pink hover:text-cyberpunk-orange">Session Logger</a></li>
             <li><a href="#" className="text-cyberpunk-pink hover:text-cyberpunk-orange">Player Roster</a></li>
+            <li><a href="/modules/combat" className="text-cyberpunk-pink hover:text-cyberpunk-orange">Combat Logs</a></li>
           </ul>
         </section>
 
