@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore server.js
+server.js
+
+# Ignore insertSampleData.js
+insertSampleData.js
