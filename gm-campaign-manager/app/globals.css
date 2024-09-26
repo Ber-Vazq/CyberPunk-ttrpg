@@ -25,3 +25,22 @@ body {
     text-wrap: balance;
   }
 }
+/* Add this CSS to your stylesheets */
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: #2d3748; /* Change to your desired highlight color */
+}
+.button {
+  color: #E36B51; /* Initial color */
+  transition: color 0.3s; /* Smooth transition effect */
+}
+
+.button:hover {
+  color: #CFACB3; /* Color on hover */
+}
