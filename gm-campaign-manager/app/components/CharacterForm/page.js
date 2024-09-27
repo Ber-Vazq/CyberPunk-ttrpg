@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import '../../globals.css';
 import axios from 'axios';
+import Cyberware from '../Cyberware';
 
 const CharacterForm = ({ campaignId, onCharacterCreated }) => {
   const [name, setName] = useState('');
@@ -96,14 +97,7 @@ const CharacterForm = ({ campaignId, onCharacterCreated }) => {
 
       {/* Cyberware and Inventory */}
       <div className="mb-6">
-        <h3 className="text-xl text-cyberpunk-orange font-bold mb-2">Cyberware</h3>
-        <textarea
-          placeholder="Describe cyberware..."
-          value={cyberware.join('\n')}
-          onChange={(e) => setCyberware(e.target.value.split('\n'))}
-          className="w-full px-3 py-2 border border-cyberpunk-pink bg-cyberpunk-blue text-cyberpunk-pink rounded-lg focus:outline-none"
-          rows="3"
-        ></textarea>
+      <Cyberware cyberware={cyberware} setCyberware={setCyberware} />
       </div>
 
       <div className="mb-6">
