@@ -1,7 +1,8 @@
+"use client";
 // components/Campaign.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import CharacterForm from './CharacterForm';
+import CharacterForm from '../CharacterForm';
 
 const Campaign = ({ campaignId }) => {
   const [characters, setCharacters] = useState([]);

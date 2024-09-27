@@ -16,7 +16,7 @@ const GMNavbar = () => (
   <nav className="bg-cyberpunk-blue p-4 rounded-full">
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 justify-center">
       <li><a href="#" className="button">NPC Generator</a></li>
-      <li><a href="/components/CharacterForm" className="button">Character Creation</a></li>
+      <li><a href="./components/CharacterForm" className="button">Character Creation</a></li>
       <li><a href="#" className="button">Player Roster</a></li>
       <li><a href="#" className="button">Logs</a></li>
       <li><a href="#" className="button">Loot Tracker</a></li>

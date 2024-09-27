@@ -44,3 +44,82 @@ body {
 .button:hover {
   color: #CFACB3; /* Color on hover */
 }
+
+/* for the character creation */
+/* Center the form and make it responsive */
+.character-form {
+  background-color: #1b1b1b; /* Dark background for a cyberpunk theme */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto; /* Center the form */
+  color: #ffffff;
+}
+
+/* Title styling */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form group spacing */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Input field styling */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+/* Button styling */
+.submit-btn {
+  background-color: #ff007b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ff3399;
+}
+
+/* Fieldset and legend styling */
+.form-fieldset {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #ff007b;
+  border-radius: 5px;
+}
+
+.form-legend {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff007b;
+}
+
+/* Stats group - align inputs in grid */
+.stats-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Responsive form */
+@media (max-width: 600px) {
+  .stats-group {
+    grid-template-columns: 1fr; /* Stack inputs in smaller screens */
+  }
+}
