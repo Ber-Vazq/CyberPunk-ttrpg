@@ -9,8 +9,15 @@ const Cyberware = ({ cyberware, setCyberware }) => {
   });
 
   const addCyberware = () => {
-    setCyberware([...cyberware, newCyberware]);
-    setNewCyberware({ type: '', description: '', humanityLoss: 0 });
+    if (newCyberware.type && newCyberware.description) {
+      setCyberware([...cyberware, newCyberware]);
+      setNewCyberware({ type: '', description: '', humanityLoss: 0 });
+    }
+  };
+
+  const removeCyberware = (index) => {
+    const updatedCyberware = cyberware.filter((_, i) => i !== index);
+    setCyberware(updatedCyberware);
   };
 
   return (
@@ -46,7 +53,9 @@ const Cyberware = ({ cyberware, setCyberware }) => {
           <input
             type="number"
             value={newCyberware.humanityLoss}
-            onChange={(e) => setNewCyberware({ ...newCyberware, humanityLoss: Number(e.target.value) })}
+            onChange={(e) =>
+              setNewCyberware({ ...newCyberware, humanityLoss: Number(e.target.value) })
+            }
             placeholder="0"
             className="w-full px-3 py-2 border border-cyberpunk-pink bg-cyberpunk-blue text-cyberpunk-pink rounded-lg focus:outline-none"
           />
@@ -65,9 +74,20 @@ const Cyberware = ({ cyberware, setCyberware }) => {
       <div className="mt-4">
         {cyberware.map((item, index) => (
           <div key={index} className="bg-cyberpunk-blue p-4 mb-2 rounded-lg">
-            <h4 className="text-cyberpunk-orange font-bold">{item.type}</h4>
-            <p className="text-cyberpunk-pink">{item.description}</p>
-            <p className="text-cyberpunk-pink">Humanity Loss: {item.humanityLoss}</p>
+            <div className="flex justify-between items-center">
+              <div>
+                <h4 className="text-cyberpunk-orange font-bold">{item.type}</h4>
+                <p className="text-cyberpunk-pink">{item.description}</p>
+                <p className="text-cyberpunk-pink">Humanity Loss: {item.humanityLoss}</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => removeCyberware(index)}
+                className="text-red-500 hover:text-red-700 focus:outline-none ml-4"
+              >
+                Remove
+              </button>
+            </div>
           </div>
         ))}
       </div>
