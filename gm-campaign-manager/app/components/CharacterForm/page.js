@@ -225,7 +225,7 @@ const CharacterForm = ({ campaignId, onCharacterCreated }) => {
       total: calculateSkillTotal({ ...skill, level: 0 }),
     }));
     setSkills(initialSkills);
-  }, [availableSkills, stats, roleAbility]);
+  }, [availableSkills, stats, roleAbility, role]);
 
   return (
     <form onSubmit={handleSubmit} className="bg-cyberpunk-black p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
@@ -288,6 +288,7 @@ const CharacterForm = ({ campaignId, onCharacterCreated }) => {
             <input
               type="number"
               min="0"
+              max="10"
               value={roleAbility.level}
               onChange={(e) => setRoleAbility(prev => ({ ...prev, level: Number(e.target.value) }))}
               className="w-full px-3 py-2 mb-2 border border-cyberpunk-pink bg-cyberpunk-blue text-cyberpunk-pink rounded-lg focus:outline-none"
